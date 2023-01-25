@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.boxers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "one two two three"
+    "one four five six"
+    "one seven eight six";
+  height: 100vh;
+  padding: 40px;
+  gap: 20px;
+  background-color: #2b2e56;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.box_one {
+  grid-area: one;
+  background-color: #6dbe4f;
+}
+
+.box_two {
+  grid-area: two;
+  background-color: #6dbe4f;
+}
+
+.box_three {
+  grid-area: three;
+  background-color: #ec3437;
+}
+
+.box_four {
+  grid-area: four;
+  background-color: #fbb22f;
+}
+
+.box_five {
+  grid-area: five;
+  background-color: #ec3437;
+}
+
+.box_six {
+  grid-area: six;
+  background-color: #6dbe4f;
+}
+
+.box_seven {
+  grid-area: seven;
+  background-color: #ec3437;
+}
+
+.box_eight {
+  grid-area: eight;
+  background-color: #fbb22f;
+}
